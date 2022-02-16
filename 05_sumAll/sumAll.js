@@ -3,9 +3,9 @@ const sumAll = function(first,last) {
     return "ERROR";
   }  else {
     if(first>last){
-      let newOne = first;//save a new variable for first
-      first = last;
-      last = newOne;
+      let newOne = first; //save a new variable for first
+      first = last; // put first arg in 2nd position
+      last = newOne; //put 2nd in first position
     }
 	let sum = 0;
 	for (let i = first; i <= last; i++) {
@@ -14,6 +14,5 @@ const sumAll = function(first,last) {
 	}
 	return sum;}
 };
-
 //Do not edit below this line
 module.exports = sumAll;
